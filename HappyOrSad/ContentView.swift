@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .center, spacing: 3) {
+            Spacer()
+            // Instruction
+            Text("How are you feeling today?")
+                .font(.title3)
             
             // Buttons
             HStack {
@@ -63,8 +67,9 @@ struct ContentView: View {
             }
             .buttonStyle(.borderless)
             .padding()
+            
+            Spacer()
         }
-        .padding()
         .navigationTitle("Happy Or Sad")
     }
 }
