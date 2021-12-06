@@ -1,5 +1,5 @@
 //
-//  Button.swift
+//  Emoji.swift
 //  HappyOrSad
 //
 //  Created by Eunbi Shin on 2021-12-06.
@@ -7,28 +7,28 @@
 
 import Foundation
 
-struct Button: Identifiable {
+struct Emoji: Identifiable {
     let id = UUID()
     let emoji: String
     let print: String
 }
 
-let listOfButtons = [
-    Button(emoji: "😊",
+let listOfEmojis = [
+    Emoji(emoji: "😊",
            print: "Happy")
     ,
-    Button(emoji: "🙂",
+    Emoji(emoji: "🙂",
            print: "Happy")
     ,
-    Button(emoji: "😐",
+    Emoji(emoji: "😐",
            print: "Happy")
     ,
-    Button(emoji: "😕",
+    Emoji(emoji: "😕",
            print: "Happy")
     ,
-    Button(emoji: "😢",
+    Emoji(emoji: "😢",
            print: "Happy")
     ,
-    Button(emoji: "😡",
+    Emoji(emoji: "😡",
            print: "Happy")
 ]
