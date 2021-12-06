@@ -9,13 +9,70 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 20) {
+            
+            // Buttons
+            HStack {
+                // Button: Happy
+                Button(action: {
+                    print("Happy")
+                }, label: {
+                    Text("😊")
+                        .font(.largeTitle)
+                })
+                
+                // Button: Good
+                Button(action: {
+                    print("Good")
+                }, label: {
+                    Text("🙂")
+                        .font(.largeTitle)
+                })
+                
+                // Button: So-so
+                Button(action: {
+                    print("So-so")
+                }, label: {
+                    Text("😐")
+                        .font(.largeTitle)
+                })
+                
+                // Button: Not good
+                Button(action: {
+                    print("Not good")
+                }, label: {
+                    Text("😕")
+                        .font(.largeTitle)
+                })
+                
+                // Button: Sad
+                Button(action: {
+                    print("Sad")
+                }, label: {
+                    Text("😢")
+                        .font(.largeTitle)
+                })
+                
+                // Button: Mad
+                Button(action: {
+                    print("Mad")
+                }, label: {
+                    Text("😡")
+                        .font(.largeTitle)
+                })
+            }
+            .buttonStyle(.borderless)
             .padding()
+        }
+        .padding()
+        .navigationTitle("Happy Or Sad")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView()
+        }
     }
 }
