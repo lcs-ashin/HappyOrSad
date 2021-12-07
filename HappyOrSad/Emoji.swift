@@ -15,20 +15,44 @@ struct Emoji: Identifiable {
 
 let listOfEmojis = [
     Emoji(emoji: "😊",
-           print: "Happy")
+           print: """
+😊Happy😊
+
+Glad to hear that you are happy today! Share your happiness with someone else.
+""")
     ,
     Emoji(emoji: "🙂",
-           print: "Happy")
+           print: """
+🙂Good🙂
+
+What make you feel good today? Make a list of the reasons why you are happy. You might use it when you feel bad later!
+""")
     ,
     Emoji(emoji: "😐",
-           print: "Happy")
+           print: """
+😐So-so😐
+
+Find something that can make your day more special! Happiness is everywhere near you...
+""")
     ,
     Emoji(emoji: "😕",
-           print: "Happy")
+           print: """
+😕Bad😕
+
+Oh no! Try to do something you like and have your favourite snack.🍰
+""")
     ,
     Emoji(emoji: "😢",
-           print: "Happy")
+           print: """
+😢Sad😢
+
+What make you feel sad? Don't avoid your sadness. Sometimes you need to face your emotion to find the reason.
+""")
     ,
     Emoji(emoji: "😡",
-           print: "Happy")
+           print: """
+😡Mad😡
+
+Reach out to your family or friends. They might have great solutions for you! 
+""")
 ]

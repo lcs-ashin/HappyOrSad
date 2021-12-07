@@ -11,7 +11,6 @@ struct ContentView: View {
     @State var feedback = ""
     var body: some View {
         VStack(alignment: .center, spacing: 3) {
-           // Spacer()
             Divider()
                 .padding(.vertical, 20)
             // Instruction
@@ -35,6 +34,7 @@ struct ContentView: View {
             .padding()
             
             Text("\(feedback)")
+                .multilineTextAlignment(.center)
             Spacer()
         }
         .navigationTitle("Happy Or Sad")
