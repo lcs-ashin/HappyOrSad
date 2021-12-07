@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var feedback = ""
     var body: some View {
         VStack(alignment: .center, spacing: 3) {
-            Spacer()
+           // Spacer()
+            Divider()
+                .padding(.vertical, 20)
             // Instruction
             Text("How are you feeling today?")
                 .font(.title3)
@@ -20,7 +23,7 @@ struct ContentView: View {
                 ForEach(listOfEmojis) { currentEmoji in
                     
                     Button(action: {
-                        print(currentEmoji.print)
+                        feedback = currentEmoji.print
                     }, label: {
                         Text(currentEmoji.emoji)
                             .font(.largeTitle)
@@ -31,6 +34,7 @@ struct ContentView: View {
             .buttonStyle(.borderless)
             .padding()
             
+            Text("\(feedback)")
             Spacer()
         }
         .navigationTitle("Happy Or Sad")
